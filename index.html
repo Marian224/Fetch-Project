@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <h1>Fetch Project</h1>
+
+    <div class="modal" id="photoModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="Full size photo">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="posts-section">
+            <ul class="posts"></ul>
+            <button type="button" class="btn btn-posts">Fetch posts</button>
+        </div>
+
+        <div class="comments-section">
+            <ul class="comments"></ul>
+            <button type="button" class="btn btn-comments">Fetch comments</button>
+        </div>
+
+        <div class="albums-section">
+            <ul class="albums"></ul>
+            <button type="button" class="btn btn-albums">Fetch albums</button>
+        </div>
+
+        <div class="photos-section">
+            <ul class="photos"></ul>
+            <button type="button" class="btn btn-photos">Fetch photos</button>
+        </div>
+
+        <div class="users-section">
+            <ul class="users"></ul>
+            <button type="button" class="btn btn-users">Fetch users</button>
+        </div>
+
+        <div class="todos-section">
+            <ul class="todos"></ul>
+            <button type="button" class="btn btn-todos">Fetch todos</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

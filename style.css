@@ -1,0 +1,271 @@
+body {
+    margin: 16px;
+    line-height: 1.5;
+    color: #212121;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #7ccfe4;
+}
+
+.container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.posts-section,
+.comments-section,
+.albums-section,
+.photos-section,
+.users-section,
+.todos-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p {
+    margin: 0;
+}
+
+.posts,
+.comments,
+.albums,
+.photos,
+.users,
+.todos {
+    width: 300px;
+    margin: 0;
+    list-style: none;
+    margin-bottom: 16px;
+}
+
+.posts li:not(:last-child),
+.comments li:not(:last-child),
+.albums li:not(:last-child),
+.photos li:not(:last-child),
+.users li:not(:last-child),
+.todos li:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.post {
+    border: 2px solid green;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.comment {
+    border: 2px solid blue;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.album {
+    border: 2px solid purple;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.photo {
+    border: 2px solid orange;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.user-name {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user-name:first-letter {
+    text-transform: uppercase;
+}
+
+.user {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.todo {
+    border: 2px solid teal;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.todo.completed {
+    opacity: 0.7;
+    background-color: rgba(0, 128, 128, 0.05);
+}
+
+.todo-title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.photo-title:first-letter {
+    text-transform: uppercase;
+}
+
+.photo-thumbnail {
+    width: 100%;
+    height: auto;
+    margin: 8px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.photo-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.modal-image {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
+.comment-name {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.comment-name:first-letter {
+    text-transform: uppercase;
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.post-title:first-letter {
+    text-transform: uppercase;
+}
+
+.post-body {
+    margin: 0;
+}
+
+.album-title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.album-title:first-letter {
+    text-transform: uppercase;
+}
+
+.user {
+    border: 2px solid red;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.todo {
+    border: 2px solid teal;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.todo.completed {
+    opacity: 0.7;
+    background-color: rgba(0, 128, 128, 0.05);
+}
+
+.todo-title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.todo-title:first-letter {
+    text-transform: uppercase;
+}
+
+.todo-status {
+    margin: 8px 0 0 0;
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+}
+
+.user-name {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.user-name:first-letter {
+    text-transform: uppercase;
+}
+
+.btn {
+    padding: 8px 16px;
+    margin-left: 39px;
+    border-radius: 8px;
+    border: none;   
+    cursor: pointer;
+    background-color: #d4d3d3;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
